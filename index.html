@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение Погоды Вики</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    </head>
+    
+    <body>
+    <!-- контейнер для самого приложения -->
+    <div class="container">
+        <h1>Погода от Вики</h1>
+        <input type="text" id="cityInput" placeholder="Введите город O.о" />
+        <button id="addCityBtn">Добавить Город</button>
+        <!-- контейнер для карточек с погодой, в него постепенно будут добавляться элементы (и также удаляться при необходимости) -->
+        <div id="weatherCardsContainer" class="cards-container"></div>
+    </div>
+    
+    <script src="src/js/script.js"></script>
+</html>

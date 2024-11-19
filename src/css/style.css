@@ -1,0 +1,101 @@
+* {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #181818;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1500px;
+}
+
+#cityInput {
+    padding: 0.5rem 1rem;
+    margin-bottom: 10px;
+    width: 15rem;
+    height: 1.5rem;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: darkgray;
+}
+
+.cards-container {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.weather-card {
+    width: 200px;
+    padding: 2rem 1rem 0 1rem;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    cursor: move;
+}
+
+.weather-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-card.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.weather-card .delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.weather-card .delete-btn:hover {
+    background-color: darkred;
+}
+
+#addCityBtn {
+    width:fit-content;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: darkgray;
+    background-color: greenyellow;
+}
+
+#addCityBtn:hover {
+    background-color: rgb(255, 168, 47);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 3rem;
+}
