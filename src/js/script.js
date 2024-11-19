@@ -43,7 +43,7 @@ function createWeatherCard(data) {
     card.innerHTML = `
         <button class="delete-btn">Удалить</button> <!-- Кнопка удаления -->
         <h3>${data.name}</h3>
-        <p>${data.weather[0].description}</p>
+        <p>Погода: ${data.weather[0].description}</p>
         <p>Температура: ${data.main.temp}°C</p>
         <p>Ощущается как: ${data.main.feels_like}°C</p>
         <p>Ветер: ${data.wind.speed} м/с</p>
